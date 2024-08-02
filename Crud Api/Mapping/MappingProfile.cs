@@ -7,7 +7,8 @@ namespace Crud_Api.Mapping
         public MappingProfile()
         {
             CreateMap<Employee, EmployeeDto>()
-                .ForMember(dest => dest.FullName, opt => opt.MapFrom(src => $"{src.Name} {src.Family}"));
+                .ForMember(dest =>  dest.FullName, opt => opt.MapFrom(src => $"{src.Name} {src.Family}"));
         }
+        //sad
     }
 }
